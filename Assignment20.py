@@ -44,6 +44,7 @@ if __name__ == "__main__":
 #   - Calculate and display the sum of odd factors. 
 # - After both threads complete execution, the main thread should display the message:
 # "Exit from main"
+
 import threading
 
 def EvenFactor(No):
