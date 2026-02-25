@@ -1,7 +1,7 @@
 import smtplib
 from email.message import EmailMessage
 
-def Marvellous_send_mail(sender, app_password, receiver, subject, body):
+def Send_mail(sender, app_password, receiver, subject, body):
     
     msg = EmailMessage()
     
@@ -20,18 +20,17 @@ def Marvellous_send_mail(sender, app_password, receiver, subject, body):
     smtp.quit()
 
 def main():
-    sender_email = "python.test@gmail.com"      
-    app_password = "xxxxx xxxx xxxx xxxx"    
-    receiver_email = "yourpersonalemail@gmail.com"
+    sender_email = "thorattanmay2004@gmail.com"      
+    app_password = "askndssdksmcw"    
+    receiver_email = "testing08@gmail.com"
     
-    subject = "Test Mail from Python Script"
-    body = """Jay Ganesh,
-    This is a test email sent using Marvellous Python.
-    Regards,
-    Marvellous Infosystems"""
+    subject = "Testing Mail"
+    body = """Hello,
+    Tanmay Thorat This Side
+    Thanks for reading! """
 
-    Marvellous_send_mail(sender_email, app_password, receiver_email, subject, body)
-    print("Marvellous Mail Sent Successfully")
+    Send_mail(sender_email, app_password, receiver_email, subject, body)
+    print("Mail sent successfully.")
 
 if __name__ == "__main__":
     main()
